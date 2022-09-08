@@ -1,0 +1,37 @@
+.friendIcon__root {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    width: calc(100% - var(--component-padding));
+    height: 3rem;
+
+    margin-bottom: var(--component-margins);
+    padding: calc(var(--component-padding) / 2);
+
+    border-radius: var(--component-border-radius);
+    
+    cursor: pointer;
+}
+
+.friendIcon__root:hover {
+    background-color: var(--bg-color);
+}
+
+.friendIcon__profilePicture {
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    border-radius: 50%;
+}
+
+.friendIcon__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.friendIcon__username {
+    font-size: large;
+    margin-left: 1rem;
+}

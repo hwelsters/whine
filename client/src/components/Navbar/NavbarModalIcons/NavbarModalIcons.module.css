@@ -1,0 +1,21 @@
+.navbarModalIcons__root {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  width: calc(var(100% - var(--component-padding) * 2));
+  padding: var(--component-padding);
+  border-radius: var(--component-border-radius);
+
+  cursor: pointer;
+  font-size: large;
+}
+
+.navbarModalIcons__root:hover {
+  background-color: var(--bg-color);
+}
+
+.navbarModalIcons__text {
+  margin-left: var(--component-padding);
+}

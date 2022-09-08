@@ -1,0 +1,7 @@
+.posts__root {
+    margin-top: var(--component-margins);
+    flex: 1;
+
+    /* test */
+    max-width: 30rem;
+}

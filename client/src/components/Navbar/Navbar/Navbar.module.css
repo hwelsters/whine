@@ -1,0 +1,78 @@
+.navbar__root {
+  position: sticky;
+  display: flex;
+  background-color: var(--fg-color);
+  height: var(--navbar-height);
+
+  align-items: center;
+
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+
+  width: 100%;
+}
+
+/* Left */
+.navbar__left {
+  display: flex;
+  background: none;
+
+  flex: 1;
+
+  justify-content: flex-start;
+
+  margin-left: var(--side-margins);
+}
+
+/* Center */
+.navbar__center {
+  display: flex;
+  background: none;
+
+  flex: 2;
+
+  justify-content: center;
+}
+
+/* Right */
+.navbar__right {
+  position: relative;
+  display: flex;
+  background: none;
+
+  justify-content: flex-end;
+  flex: 1;
+
+  margin-right: var(--side-margins);
+}
+
+.navbar__profilePicture {
+  border-radius: 50%;
+  height: var(--navbar-item-height);
+
+  aspect-ratio: 1/1;
+  object-fit: contain;
+
+  cursor: pointer;
+}
+
+.navbar__signIn {
+  padding: 1rem;
+  background-color: var(--bg-tint-color);
+  color: var(--fg-tint-color);
+
+  white-space: nowrap;
+  border-radius: var(--component-border-radius);
+
+  cursor: pointer;
+}
+
+.navbar__signIn:hover {
+  filter: brightness(0.95);
+}
+
+.navbar__signIn:active {
+  filter: brightness(0.9);
+}

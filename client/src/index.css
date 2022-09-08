@@ -1,0 +1,42 @@
+body {
+  /* Colors */
+  --bg-color: #f3f5f7;
+  --fg-color: #ffffff;
+  --font-color: #0e1221;
+
+  --bg-tint-color: #f1eafb;
+  --fg-tint-color: #8350f5;
+
+  /* Page */
+  --side-margins: 15%;
+  --side-widths: 20rem;
+
+  /* Navbar */
+  --navbar-height: 4rem;
+  --navbar-item-height: calc(var(--navbar-height) * 0.6);
+
+  /* Components */
+  --component-margins: 1.5rem;
+  --component-border-radius: 0.75rem;
+  --component-padding: 1.5rem;
+
+  /* Explore icons */
+  --explore-icons-margins: 0.1rem;
+
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+@media only screen and (max-width: 760px) {
+  body {
+    --side-margins: 5%;
+  }
+}
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}

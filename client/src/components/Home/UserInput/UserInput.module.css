@@ -1,0 +1,129 @@
+/* Image */
+.userInput__imageDiv {
+  position: relative;
+  width: 100%;
+}
+
+.userInput__image {
+  width: 100%;
+  margin-bottom: var(--component-padding);
+  border-radius: var(--component-border-radius);
+
+  aspect-ratio: 2/1.7;
+  object-fit: cover;
+}
+
+.userInput__hidden {
+  display: none;
+}
+
+.userInput__imageClose {
+  display: flex;
+  position: absolute;
+
+  width: calc(var(--navbar-item-height));
+  aspect-ratio: 1/1;
+
+  left: calc(var(--navbar-item-height) * -1 / 2);
+  top: calc(var(--navbar-item-height) * -1 / 2);
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: none;
+  color: rgba(0, 0, 0, 0);
+}
+
+.userInput__imageClose:hover {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+.userInput__header {
+  display: flex;
+  flex-direction: row;
+}
+
+.userInput__profilePic {
+  height: var(--navbar-item-height);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: contain;
+
+  cursor: pointer;
+}
+
+.userInput__line {
+  margin-top: var(--component-padding);
+  background-color: var(--bg-color);
+}
+
+.userInput__input {
+  background-color: var(--bg-color);
+
+  padding: 0.5rem;
+  padding-left: 1rem;
+  margin-left: var(--component-padding);
+
+  flex: 1;
+
+  font-size: medium;
+
+  border-radius: 100rem;
+  border: none;
+  outline: none;
+}
+
+.userInput__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--component-padding);
+  margin-bottom: calc(var(--component-padding) * -0.5);
+}
+
+.userInput__info {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.userInput__icon {
+  display: flex;
+  cursor: pointer;
+  background-color: var(--bg-tint-color);
+  color: var(--fg-tint-color);
+
+  width: var(--navbar-item-height);
+
+  align-items: center;
+  justify-content: center;
+
+  margin-left: var(--component-padding);
+  outline: none;
+
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.userInput__icon:hover {
+  filter: brightness(0.9);
+}
+
+.userInput__icon:active {
+  filter: brightness(0.8);
+}
+
+.userInput__error {
+  flex: 1;
+  color: var(--fg-tint-color);
+  font-size: small;
+
+  margin-right: var(--component-padding);
+}

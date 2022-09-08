@@ -1,0 +1,20 @@
+.navbarModal__root {
+  display: none;
+  position: absolute;
+
+  flex-direction: column;
+
+  top: var(--navbar-height);
+  right: 0;
+
+  background-color: var(--fg-color);
+  padding: var(--component-padding);
+
+  border-style: solid;
+  border-color: var(--bg-color);
+  border-radius: var(--component-border-radius);
+}
+
+*:focus > .navbarModal__root {
+  display: flex;
+}

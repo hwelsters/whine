@@ -1,0 +1,83 @@
+.settings__root {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));
+
+  transition: all 500ms;
+}
+
+@media only screen and (max-width: 760px) {
+  .settings__root {
+    background-color: var(--fg-color);
+  }
+}
+
+.settings__block {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--component-padding);
+  border-radius: var(--component-border-radius);
+
+  background-color: var(--fg-color);
+}
+
+.settings__profilePic {
+  width: 50%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: var(--component-border-radius);
+
+  margin: var(--component-margins);
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.settings__profilePic:hover {
+  filter: brightness(0.95);
+}
+
+.settings__label {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.settings__input {
+  width: calc(100% - 2 * var(--component-padding));
+  font-size: medium;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: var(--component-border-radius);
+  outline: none;
+  padding: var(--component-padding);
+}
+
+.settings__button {
+  margin-top: var(--component-margins);
+  font-size: medium;
+  outline: none;
+  border: none;
+
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--bg-tint-color);
+  color: var(--fg-tint-color);
+
+  border-radius: var(--component-border-radius);
+
+  cursor: pointer;
+}
+
+.settings__button:hover {
+  filter: brightness(0.95);
+}
+
+.settings__button:active {
+  filter: brightness(0.9);
+}

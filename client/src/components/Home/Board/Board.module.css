@@ -1,0 +1,9 @@
+.board__root {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fg-color);
+    border-radius: var(--component-border-radius);
+  
+    margin-bottom: var(--component-margins);
+    padding: var(--component-padding);
+  }

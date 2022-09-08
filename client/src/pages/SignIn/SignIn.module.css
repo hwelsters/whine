@@ -1,0 +1,94 @@
+.signIn__belowNavbar {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));
+
+  align-items: center;
+  justify-content: center;
+
+  transition: all 500ms;
+}
+
+@media only screen and (max-width: 760px) {
+  .signIn__belowNavbar {
+    background-color: var(--fg-color);
+  }
+}
+
+.signIn__block {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--fg-color);
+
+  justify-content: center;
+  align-items: center;
+
+  width: 20rem;
+  border-radius: var(--component-border-radius);
+  padding: var(--component-padding);
+}
+
+@media only screen and (max-width: 360px) {
+  .signIn__block {
+    width: calc(100% - 2 * var(--component-padding));;
+  }
+}
+
+.signIn__subBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signIn__label {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.signIn__input {
+  width: calc(100% - 2 * var(--component-padding));
+  font-size: medium;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: var(--component-border-radius);
+  outline: none;
+  padding: var(--component-padding);
+}
+
+.signIn__below {
+  display: flex;
+
+  margin-top: var(--component-padding);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signIn__link {
+  color: var(--fg-tint-color);
+}
+
+.signIn__button {
+  margin-top: var(--component-margins);
+  font-size: medium;
+  outline: none;
+  border: none;
+
+  padding: 1rem;
+  background-color: var(--bg-tint-color);
+  color: var(--fg-tint-color);
+
+  border-radius: var(--component-border-radius);
+
+  cursor: pointer;
+}
+
+.signIn__button:hover {
+  filter: brightness(0.95);
+}
+
+.signIn__button:active {
+  filter: brightness(0.9);
+}

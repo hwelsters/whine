@@ -1,0 +1,13 @@
+.rightSection__root {
+  flex: 1;
+  margin-left: var(--component-padding);
+  margin-top: var(--component-margins);
+
+  max-width: var(--side-widths);
+}
+
+@media only screen and (max-width: 1400px) {
+  .rightSection__root {
+    display: none;
+  }
+}

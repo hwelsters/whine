@@ -1,0 +1,7 @@
+.logo__root {
+  background: none;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.searchbar__root {
+  --searchbar-spacing: 0.75rem;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-left: var(--searchbar-spacing);
+  padding-right: var(--searchbar-spacing);
+
+  flex: 1;
+
+  background-color: var(--bg-color);
+
+  border-radius: calc(var(--navbar-item-height) / 2);
+  height: var(--navbar-item-height);
+}
+
+@media only screen and (max-width: 760px) {
+  .searchbar__root {
+    display: none;
+  }
+}
+
+.searchbar__form {
+  display: flex;
+  flex: 1;
+}
+
+.searchbar__input {
+  background: none;
+
+  outline: none;
+  border: none;
+  flex: 1;
+
+  font-size: medium;
+  margin-left: var(--searchbar-spacing);
+}

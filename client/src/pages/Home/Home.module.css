@@ -1,0 +1,17 @@
+.home__root {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--bg-color);
+  flex: 1;
+}
+
+.home__body {
+  display: flex;
+
+  margin-left: var(--side-margins);
+  margin-right: var(--side-margins);
+
+  justify-content: space-around;
+  flex-direction: row;
+}
