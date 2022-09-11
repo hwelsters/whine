@@ -3,8 +3,10 @@
   flex-direction: column;
 
   width: 100%;
-  height: calc(100vh - var(--navbar-height));
 
+  margin-top: var(--component-margins);
+  margin-bottom: var(--component-margins);
+  
   align-items: center;
   justify-content: center;
   
@@ -27,6 +29,7 @@
 
   border-radius: var(--component-border-radius);
   width: 20rem;
+
   padding: var(--component-padding);
 }
 

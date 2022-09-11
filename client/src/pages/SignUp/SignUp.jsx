@@ -1,10 +1,13 @@
 import { useState } from "react";
+import axios from "axios";
 
 import styles from "./SignUp.module.css";
+import { checkPasswordStrength } from "./passwordCheck";
 
 import Logo from "../../components/Logo/Logo";
 import Navbar from "../../components/Navbar/Navbar/Navbar";
 import { Link } from "react-router-dom";
+import PasswordStrength from "../../components/Authentication/PasswordStrengthModal/PasswordStrength";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
@@ -12,12 +15,39 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
+  const [passwordStrength, setPasswordStrength] = useState(
+    new Array() < Boolean > 5
+  );
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
+  const setPasswordField = (event) => {
+    console.log("DOING STUFF");
+    setPassword(event.target.value);
+    setPasswordStrength(checkPasswordStrength(event.target.value));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
     setError("");
-    if (password !== confirmPassword) setError("Passwords don't match");
+    if (username === "") setError("Username is required");
+    else if (email === "") setError("Email is required");
+    else if (password !== confirmPassword) setError("Passwords don't match");
+    else {
+      try {
+        const res = await axios.post(
+          "http://localhost:5000/api/auth/register",
+          {
+            username: username,
+            email: email,
+            password: password,
+          }
+        );
+
+        console.log(res);
+      } catch (err) {
+        console.log(err);
+      }
+    }
   };
 
   return (
@@ -31,7 +61,7 @@ export default function SignUp() {
             <label className={styles.signUp__label}>Email</label>
             <input
               className={styles.signUp__input}
-              type="text"
+              type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -51,8 +81,10 @@ export default function SignUp() {
               className={styles.signUp__input}
               type="password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={setPasswordField}
             />
+
+            <PasswordStrength passwordStrength={passwordStrength} />
 
             {/* Confirm password input */}
             <label className={styles.signUp__label}>Confirm Password</label>
