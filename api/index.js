@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
+const port = process.env.PORT || 5000;
+
 const authRoute = require("./routes/auth");
 
 const app = express();
@@ -14,7 +16,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("CONNECTED TO MONGODB DBaaS"))
+  .then(() => console.log("CONNECTED TO MONGODB CLOUD"))
   .catch((err) => console.error(err));
 
 // CORS
@@ -27,6 +29,4 @@ app.use(
 app.use(express.json());
 app.use("/api/auth", authRoute);
 
-app.listen(5000, () => {
-  console.log("BACKEND IS LIVE");
-});
+app.listen(port, () => { console.log(`BACKEND IS LIVE ON PORT ${port}`); });

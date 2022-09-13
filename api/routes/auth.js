@@ -42,4 +42,34 @@ router.post("/register", async (req, res) => {
   }
 });
 
+router.post("/login", async (req, res) => {
+  console.log("LOGIN");
+  try {
+    const user = await User.findOne({ email: req.email });
+    if (!user) {
+      res.status(400).json("Invalid username or password");
+      return;
+    }
+
+    const bytes = CryptoJS.AES.decrypt(req.password, process.env.SECRET_KEY);
+    const originalPassword = bytes.toString(CryptoJS.enc.Utf8);
+
+    if (originalPassword !== req.password) {
+      res.status(400).json("Invalid username or password");
+      return;
+    }
+
+    const accessToken = jwt.sign(
+      { id: user._id.toString() },
+      process.env.SECRET_KEY,
+      { expiresIn: "5d" }
+    );
+
+    const { password, ...info } = user._doc;
+    res.status(200).json({ ...info, accessToken });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;

@@ -13,7 +13,7 @@ export default function SignIn() {
         <div className={styles.signIn__block}>
           <Logo />
           <div className={styles.signIn__subBlock}>
-            <label className={styles.signIn__label}>Email</label>
+            <label className={styles.signIn__label}>Username or Email</label>
             <input className={styles.signIn__input} type="email" />
             <label className={styles.signIn__label}>Password</label>
             <input className={styles.signIn__input} type="password" />

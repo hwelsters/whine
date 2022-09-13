@@ -43,8 +43,10 @@ export default function SignUp() {
           }
         );
 
-        console.log(res);
+        setError("Profile created");
+        window.location.href = "/signin";
       } catch (err) {
+        setError(err.response.data);
         console.log(err);
       }
     }
