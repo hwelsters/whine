@@ -1,19 +1,18 @@
 import React, { useState } from "react";
+import Board from "../Board/Board";
 import Post from "../Post/Post";
-import UserInput from "../UserInput/UserInput";
 
 import styles from "./Posts.module.css";
 
-export default function Posts({children}) {
-  const [posts, setPosts] = useState([
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-  ]);
+export default function Posts({ children, posts }) {
   return (
     <div className={styles.posts__root}>
       {children}
-      {posts.map(() => (
-        <Post text=""/>
+      {posts.map((post, index) => (
+        <Post key={index} post={post} />
       ))}
+
+      {posts.length === 0 && (<Board> 🙃Nothing to see here... </Board>)}
     </div>
   );
 }

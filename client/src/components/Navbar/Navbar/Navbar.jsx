@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./Navbar.module.css";
 
@@ -6,10 +7,11 @@ import Searchbar from "../Searchbar/Searchbar";
 import NavbarIcon from "../NavbarIcon/NavbarIcon";
 import Logo from "../../Logo/Logo";
 import NavbarModal from "../NavbarModal/NavbarModal";
-import { Link } from "react-router-dom";
+
+import { AuthContext } from "../../../contexts/Auth/AuthContext";
 
 export default function Navbar() {
-  const [user, setUser] = useState("");
+  const { user } = useContext(AuthContext);
   return (
     <div className={styles.navbar__root}>
       {/* Left */}
@@ -22,25 +24,28 @@ export default function Navbar() {
       </div>
       {/* Right */}
       <div className={styles.navbar__right} tabIndex="0">
-        {user?
+        {user ? (
           <>
             <NavbarIcon
               Icon={
                 <img
                   className={styles.navbar__profilePicture}
                   src={global.testImgUrl}
+                  onError={(e) => {
+                    e.target.onError = null;
+                    e.target.src=global.testImgUrl
+                  }}
                 />
               }
             />
             <NavbarModal />
           </>
-
-          :
-
-          <Link className={styles.navbar__signIn} to="/signin">Sign in</Link>
-        }
+        ) : (
+          <Link className={styles.navbar__signIn} to="/signin">
+            Sign in
+          </Link>
+        )}
       </div>
-
     </div>
   );
 }

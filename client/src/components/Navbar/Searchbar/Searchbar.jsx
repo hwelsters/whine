@@ -12,7 +12,7 @@ export default function Searchbar() {
         <input
           className={styles.searchbar__input}
           type="text"
-          placeholder="Search for some stuff to whine about..."
+          placeholder="Search for stuff to whine about..."
         />
       </form>
     </div>

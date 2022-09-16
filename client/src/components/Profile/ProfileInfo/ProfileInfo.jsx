@@ -7,7 +7,6 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 export default function ProfileInfo({ username, dateCreated }) {
   return (
-    <div className={styles.profileInfo__root}>
       <Board>
         <img
           className={styles.profileInfo__profilePicture}
@@ -23,6 +22,5 @@ export default function ProfileInfo({ username, dateCreated }) {
           <div>{dateCreated}</div>
         </div>
       </Board>
-    </div>
   );
 }

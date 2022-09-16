@@ -59,15 +59,6 @@ export default function SignUp() {
         <form className={styles.signUp__block} onSubmit={handleSubmit}>
           <Logo />
           <div className={styles.signUp__subBlock}>
-            {/* Email input */}
-            <label className={styles.signUp__label}>Email</label>
-            <input
-              className={styles.signUp__input}
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-
             {/* Username input */}
             <label className={styles.signUp__label}>Username</label>
             <input
@@ -75,6 +66,15 @@ export default function SignUp() {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+            />
+
+            {/* Email input */}
+            <label className={styles.signUp__label}>Email</label>
+            <input
+              className={styles.signUp__input}
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
 
             {/* Password input */}

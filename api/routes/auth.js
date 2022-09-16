@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const CryptoJS = require("crypto-js");
 const jwt = require("jsonwebtoken");
+const verify = require("../verifyToken");
 
 const User = require("../models/User");
 
@@ -12,6 +13,7 @@ const passwordIsStrong = (password) => {
   return false;
 };
 
+// REGISTER
 router.post("/register", async (req, res) => {
   console.log("REGISTER");
 
@@ -42,20 +44,28 @@ router.post("/register", async (req, res) => {
   }
 });
 
+// LOGIN
 router.post("/login", async (req, res) => {
   console.log("LOGIN");
   try {
-    const user = await User.findOne({ email: req.email });
-    if (!user) {
-      res.status(400).json("Invalid username or password");
+    if (req.body.email == "" || req.body.password == "") {
+      res.status(400).json("Invalid email or password");
       return;
     }
 
-    const bytes = CryptoJS.AES.decrypt(req.password, process.env.SECRET_KEY);
+    console.log(req.body);
+    const user = await User.findOne({ email: req.body.email });
+    if (!user) {
+      res.status(400).json("Invalid email or password");
+      return;
+    }
+    console.log("USER" + user);
+
+    const bytes = CryptoJS.AES.decrypt(user.password, process.env.SECRET_KEY);
     const originalPassword = bytes.toString(CryptoJS.enc.Utf8);
 
-    if (originalPassword !== req.password) {
-      res.status(400).json("Invalid username or password");
+    if (originalPassword != req.body.password) {
+      res.status(401).json("Invalid email or password");
       return;
     }
 
@@ -69,6 +79,41 @@ router.post("/login", async (req, res) => {
     res.status(200).json({ ...info, accessToken });
   } catch (err) {
     res.status(500).json(err);
+  }
+});
+
+// UPDATE
+router.put("/update/:id", verify, async (req, res) => {
+  if (req.user && req.user.id === req.params.id) {
+    if (req.body.password) {
+      req.body.password = CryptoJS.encrypt(
+        req.body.password,
+        process.env.SECRET_KEY
+      ).toString();
+    }
+
+    try {
+      const updatedUser = await User.findByIdAndUpdate(
+        req.params.id,
+        { $set: req.body },
+        { new: true }
+      );
+      res.status(200).json("Profile successfully updated");
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  }
+});
+
+// DELETE
+router.delete("/delete/:id", verify, async (req, res) => {
+  if (req.user && req.user.id === req.params.id) {
+    try {
+      const deletedUser = await User.findByIdAndDelete(req.params.id);
+      res.status(200).json("User successfully deleted");
+    } catch (err) {
+      res.status(500).json(err);
+    }
   }
 });
 

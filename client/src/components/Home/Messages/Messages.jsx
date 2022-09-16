@@ -9,9 +9,9 @@ export default function Messages() {
   const [friends, setFriends] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   return (
     <Board>
-      <h1 className={styles.messages__title}>Friends</h1>
-      {friends.map(() => (
-        <FriendIcon username="Noel"/>
+      <h1 className={styles.messages__title}>Other people</h1>
+      {friends.map((friend, index) => (
+        <FriendIcon key={index} username="Noel"/>
       ))}
     </Board>
   );

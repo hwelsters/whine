@@ -19,12 +19,16 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+
+  transition: all 100ms;
 }
 
 .emotionIcons__block:hover {
-    filter: brightness(0.95);
-  }
-  
+  filter: brightness(1.01);
+  transform: scale(1.05, 1.05);
+}
+
 .emotionIcons__block:active {
-    filter: brightness(0.9);
-  }
+  filter: brightness(1.005);
+  transform: scale(0.95, 0.95);
+}

@@ -127,3 +127,16 @@
 
   margin-right: var(--component-padding);
 }
+
+.userInput__dropdown {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: var(--component-padding);
+  background-color: var(--bg-tint-color);
+
+
+  border-radius: var(--component-border-radius);
+  cursor: pointer;
+}

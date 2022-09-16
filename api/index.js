@@ -6,6 +6,7 @@ const cors = require("cors");
 const port = process.env.PORT || 5000;
 
 const authRoute = require("./routes/auth");
+const postsRoute = require("./routes/posts");
 
 const app = express();
 dotenv.config();
@@ -27,6 +28,10 @@ app.use(
 );
 
 app.use(express.json());
-app.use("/api/auth", authRoute);
 
-app.listen(port, () => { console.log(`BACKEND IS LIVE ON PORT ${port}`); });
+app.use("/api/auth", authRoute);
+app.use("/api/posts", postsRoute);
+
+app.listen(port, () => {
+  console.log(`BACKEND IS LIVE ON PORT ${port}`);
+});

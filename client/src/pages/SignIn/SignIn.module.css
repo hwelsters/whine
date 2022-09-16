@@ -33,7 +33,7 @@
 
 @media only screen and (max-width: 360px) {
   .signIn__block {
-    width: calc(100% - 2 * var(--component-padding));;
+    width: calc(100% - 2 * var(--component-padding));
   }
 }
 
@@ -91,4 +91,14 @@
 
 .signIn__button:active {
   filter: brightness(0.9);
+}
+
+.signIn__warning {
+  display: flex;
+  font-size: small;
+  color: var(--fg-tint-color);
+  margin-top: var(--component-margins);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }

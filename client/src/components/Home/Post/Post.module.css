@@ -41,3 +41,23 @@
   aspect-ratio: 2/1.7;
   object-fit: cover;
 }
+
+.post__icon {
+  margin-top: var(--component-padding);
+  color: var(--fg-tint-color);
+  cursor: pointer;
+  transition: all 100s;
+}
+
+.post__icon:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.post__icon:active {
+  transform: scale(0.95, 0.95);
+}
+
+.post__emotion {
+  margin-right: var(--component-padding);
+  font-size: large;
+}
