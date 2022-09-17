@@ -14,11 +14,11 @@
 <p>A small website in the big world 🌎</p>
 <br/>
 
-Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website where people can whine about things in six words or less! Whine exactly the way that you should whine (in six words or less) on this spanking new social media website. Explore emotion spaces which contain posts classified with sentiment analysis.
+Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website where people can whine about things in six words or less! Whine exactly the way that you should whine (in six words or less) on this spanking new social media website. Explore emotion spaces which contain posts classified with [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis).
 
 <h2>🍟 Features</h2>
 
-- Text-based sentiment analysis to classify posts into certain emotions  
+- Text-based [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis) to classify posts into certain emotions  
 - Front-end made with React
 - Back-end made with [Node.js](https://en.wikipedia.org/wiki/Node.js), [Express.js](https://en.wikipedia.org/wiki/Express.js)  and [MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 
