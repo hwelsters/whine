@@ -4,11 +4,11 @@
 
 <h2>📖 Contents</h2>
 
-• [🤘  Introduction](https://github.com/hwelsters/whine/blob/main/README.md#introduction)  
-• [🍟 Features  ](https://github.com/hwelsters/README.md#features)  
-• [✨ Preview  ](https://github.com/hwelsters/edamame#here-is-edamame-in-all-its-glory)  
-• [🥞 Tech Stack  ](https://github.com/hwelsters/edamame#-playing-the-game)  
-• [🤔 FAQ  ](https://github.com/hwelsters/edamame#-faq)  
+• [🤘  Introduction](https://github.com/hwelsters/whine/blob/main/README.md#--introduction)  
+• [🍟 Features  ](https://github.com/hwelsters/whine#-features)  
+• [✨ Preview  ](https://github.com/hwelsters/whine#-preview--)  
+• [🥞 Tech Stack  ]([https://github.com/hwelsters/edamame#-playing-the-game](https://github.com/hwelsters/whine#-tech-stack))  
+• [🤔 FAQ  ](https://github.com/hwelsters/whine#-faq--)  
 
 <h2>🤘  Introduction</h2>
 <p>A small website in the big world 🌎</p>
