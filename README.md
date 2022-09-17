@@ -11,7 +11,7 @@
 • [🤔 FAQ  ](https://github.com/hwelsters/edamame#-faq)  
 
 <h2>🤘  Introduction</h2>
-<p>A small website in the big world </p>
+<p>A small website in the big world 🌎</p>
 <br/>
 
 Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website where people can whine about things in six words or less! 
