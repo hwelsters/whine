@@ -18,7 +18,9 @@ Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website wh
 
 <h2>🍟 Features</h2>
 
-- Sentiment analysis to classify posts into certain emotions  
+- Text-based sentiment analysis to classify posts into certain emotions  
+- Front-end made with React
+- Back-end made with Node.js, Express.js and MongoDB
 
 <h2>✨ Preview  </h2>
 
@@ -33,3 +35,4 @@ Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website wh
 • [Node.js  ](https://en.wikipedia.org/wiki/Node.js)  
 
 <h2>🤔 FAQ  </h2>
+
