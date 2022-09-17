@@ -10,6 +10,8 @@
 • [🥞 Tech Stack  ](https://github.com/hwelsters/whine#-tech-stack)  
 • [🤔 FAQ  ](https://github.com/hwelsters/whine#-faq--)  
 
+<br/>
+
 <h2>🤘  Introduction</h2>
 <p>A small website in the big world 🌎</p>
 <br/>
@@ -21,12 +23,14 @@ Each post will be classified into one of the following emotions:
 - 😤 😐 🙂
 - 😀 🤗 🍆
 
+<br/>
 <h2>🍟 Features</h2>
 
 - Text-based [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis) to classify posts into certain emotions  
 - Front-end made with React
 - Back-end made with [Node.js](https://en.wikipedia.org/wiki/Node.js), [Express.js](https://en.wikipedia.org/wiki/Express.js)  and [MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 
+<br/>
 <h2>✨ Preview  </h2>
 What it looks like on desktops 🖥️:
 
@@ -37,6 +41,7 @@ What it looks like on desktops 🖥️:
   <img src="https://user-images.githubusercontent.com/84760072/190868943-070ba529-81e0-479d-81bd-a2991d2d0f09.png"/>
 </p>
 
+<br/>
 ### 🌙 Dark Mode  <br/>
 
 ![image](https://user-images.githubusercontent.com/84760072/190869606-155a6164-051f-4e47-88c1-ccfa0cc68df6.png)
@@ -44,6 +49,7 @@ What it looks like on desktops 🖥️:
   <img src="https://user-images.githubusercontent.com/84760072/190869666-81fccac9-78e4-40ae-b834-98c373f12839.png"/>
 </p>
 
+<br/>
 <h2>🥞 Tech Stack</h2>
 
 • [🌿 MongoDB](https://en.wikipedia.org/wiki/MongoDB)  
@@ -52,5 +58,6 @@ What it looks like on desktops 🖥️:
 • [🔗 Node.js  ](https://en.wikipedia.org/wiki/Node.js)  
 
 
+<br/>
 <h2>🤔 FAQ  </h2>
 
