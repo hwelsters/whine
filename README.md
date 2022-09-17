@@ -23,8 +23,10 @@ Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website wh
 - Back-end made with Node.js, Express.js and MongoDB
 
 <h2>✨ Preview  </h2>
-
+What it looks like on desktops 🖥️:
 ![image](https://user-images.githubusercontent.com/84760072/190868710-40199bad-bd57-4dbd-81ab-25ec1d7174cc.png)
+
+What it looks like on mobile devices 📱:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84760072/190868943-070ba529-81e0-479d-81bd-a2991d2d0f09.png"/>
 </p>
