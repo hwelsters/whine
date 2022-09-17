@@ -28,12 +28,12 @@ Each post will be classified into one of the following emotions:
 <h2>✨ Preview  </h2>
 What it looks like on desktops 🖥️:
 
-### ☀️ Light Mode
+### ☀️ Light Mode  
 ![image](https://user-images.githubusercontent.com/84760072/190868710-40199bad-bd57-4dbd-81ab-25ec1d7174cc.png)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84760072/190868943-070ba529-81e0-479d-81bd-a2991d2d0f09.png"/>
 </p>
-### 🌙 Dark Mode
+### 🌙 Dark Mode  
 ![image](https://user-images.githubusercontent.com/84760072/190869606-155a6164-051f-4e47-88c1-ccfa0cc68df6.png)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84760072/190869666-81fccac9-78e4-40ae-b834-98c373f12839.png"/>
