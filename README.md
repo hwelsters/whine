@@ -28,7 +28,9 @@ Each post will be classified into one of the following emotions:
 <h2>✨ Preview  </h2>
 What it looks like on desktops 🖥️:
 
+### ☀️ Light Mode
 ![image](https://user-images.githubusercontent.com/84760072/190868710-40199bad-bd57-4dbd-81ab-25ec1d7174cc.png)
+### 🌙 Dark Mode
 ![image](https://user-images.githubusercontent.com/84760072/190869606-155a6164-051f-4e47-88c1-ccfa0cc68df6.png)
 
 What it looks like on mobile devices 📱:
