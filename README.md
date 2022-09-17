@@ -44,10 +44,10 @@ What it looks like on desktops 🖥️:
 
 <h2>🥞 Tech Stack</h2>
 
-• [MongoDB](https://en.wikipedia.org/wiki/MongoDB)  
-• [Express  ](https://en.wikipedia.org/wiki/Express.js)  
-• [React.js  ](https://en.wikipedia.org/wiki/React_(JavaScript_library))  
-• [Node.js  ](https://en.wikipedia.org/wiki/Node.js)  
+• [🌿 MongoDB](https://en.wikipedia.org/wiki/MongoDB)  
+• [⚡ Express  ](https://en.wikipedia.org/wiki/Express.js)  
+• [⚛️ React.js  ](https://en.wikipedia.org/wiki/React_(JavaScript_library))  
+• [🔗 Node.js  ](https://en.wikipedia.org/wiki/Node.js)  
 
 
 <h2>🤔 FAQ  </h2>
