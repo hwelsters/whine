@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"
 import Board from "../Board/Board";
 
 import styles from "./Post.module.css";
@@ -8,15 +9,21 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import exploreIcons from "../Explore/ExploreEmojis";
 
 export default function Post({ post }) {
-  const [liked, setLiked] = useState(false);
-  console.log(post);
+  const date = new Date(post.createdAt);
+  const dateString = date.getDate();
+  const monthString = date.getMonth();
+  const yearString = date.getFullYear();
+  const str = monthString + "/" + dateString + "/" + yearString;
+
   return (
     <Board>
       <div className={styles.post__header}>
         <img className={styles.post__profilePic} src={global.testImgUrl} />
         <div className={styles.post__info}>
-          <span className={styles.post__profileName}>{post.username}</span>
-          <span className={styles.post__date}>{post.createdAt}</span>
+          <Link to={`/friend?u=${post.username}`}>
+            <span className={styles.post__profileName}>{post.username}</span>
+          </Link>
+          <span className={styles.post__date}>{str}</span>
         </div>
       </div>
 
@@ -26,19 +33,6 @@ export default function Post({ post }) {
           {exploreIcons[post.emotion]}
         </span>
         {post.text}
-      </span>
-      <span className={styles.post_icons}>
-        {liked ? (
-          <FavoriteIcon
-            className={styles.post__icon}
-            onClick={() => setLiked(!liked)}
-          />
-        ) : (
-          <FavoriteBorderIcon
-            className={styles.post__icon}
-            onClick={() => setLiked(!liked)}
-          />
-        )}
       </span>
     </Board>
   );

@@ -117,4 +117,35 @@ router.delete("/delete/:id", verify, async (req, res) => {
   }
 });
 
+// GET MOST RECENT USERS
+router.get("/recent", async (req, res) => {
+  try {
+    const recentUsers = await User.find().limit(10);
+
+    const toReturn = recentUsers.map((item) => {
+      return {
+        username: item.username,
+        profilePic: item.profilePic,
+      };
+    });
+    console.log(toReturn);
+    res.status(200).json(toReturn);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// GET USER DETAILS WITHOUT SENSITIVE DATA
+router.get("/front/:username", async (req, res) => {
+  console.log("GET USER DETAILS");
+  console.log(req.params.username);
+  try {
+    const user = await User.findOne({ username: req.params.username });
+    res.status(200).json(user);
+    console.log(user);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 import styles from "./Messages.module.css";
 
@@ -7,11 +8,24 @@ import FriendIcon from "../FriendIcon/FriendIcon";
 
 export default function Messages() {
   const [friends, setFriends] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+
+  const getPosts = async () => {
+    const res = await axios
+      .get(`${global.apiUrl}/auth/recent/`)
+      .then((res) => {
+        setFriends(res.data);
+      });
+  };
+
+  useEffect(()=>{
+    getPosts();
+  },[]);
+
   return (
     <Board>
       <h1 className={styles.messages__title}>Other people</h1>
       {friends.map((friend, index) => (
-        <FriendIcon key={index} username="Noel"/>
+        <FriendIcon key={index} username={friend.username}/>
       ))}
     </Board>
   );

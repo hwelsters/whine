@@ -14,7 +14,7 @@ export default function Home() {
   const [posts, setPosts] = useState([]);
 
   const getPosts = async () => {
-    await axios.get(`${global.apiUrl}/posts/`).then((res) => {
+    await axios.get(`${global.apiUrl}/posts/recent`).then((res) => {
       setPosts(res.data);
     });
   };

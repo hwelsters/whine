@@ -24,11 +24,54 @@
 }
 
 .emotionIcons__block:hover {
-  filter: brightness(1.01);
+  filter: brightness(1.025);
   transform: scale(1.05, 1.05);
 }
 
 .emotionIcons__block:active {
   filter: brightness(1.005);
   transform: scale(0.95, 0.95);
+}
+
+.emotionIcons__colorFirst {
+  background-color: #F6D0E8;
+}
+
+.emotionIcons__colorSecond {
+  background-color: #F6D0E8;
+}
+
+.emotionIcons__colorThird {
+  
+  background-color: #F9DFE1;
+}
+
+.emotionIcons__colorFourth {
+  
+  background-color: #F9DFE1;
+}
+
+.emotionIcons__colorFifth {
+  
+  background-color: #EFEED8;
+}
+
+.emotionIcons__colorSixth {
+  
+  background-color: #D4EBD4;
+}
+
+.emotionIcons__colorSeventh {
+  
+  background-color: #D4EBD4;
+}
+
+.emotionIcons__colorEight {
+  
+  background-color: #D8DDEC;
+}
+
+.emotionIcons__colorNinth {
+  
+  background-color: #D8DDEC;
 }

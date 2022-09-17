@@ -18,10 +18,6 @@ export default function Navbar() {
       <div className={styles.navbar__left}>
         <Logo />
       </div>
-      {/* Center */}
-      <div className={styles.navbar__center}>
-        <Searchbar />
-      </div>
       {/* Right */}
       <div className={styles.navbar__right} tabIndex="0">
         {user ? (
@@ -33,7 +29,7 @@ export default function Navbar() {
                   src={global.testImgUrl}
                   onError={(e) => {
                     e.target.onError = null;
-                    e.target.src=global.testImgUrl
+                    e.target.src = global.testImgUrl;
                   }}
                 />
               }

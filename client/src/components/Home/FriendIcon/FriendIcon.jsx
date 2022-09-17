@@ -4,7 +4,7 @@ import styles from "./FriendIcon.module.css";
 
 export default function FriendIcon({ username }) {
   return (
-    <Link to={"/profile?p=" + username}>
+    <Link to={"/friend?u=" + username}>
       <div className={styles.friendIcon__root}>
         <img
           className={styles.friendIcon__profilePicture}

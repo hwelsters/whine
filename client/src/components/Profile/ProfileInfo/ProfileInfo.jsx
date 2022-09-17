@@ -1,26 +1,48 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { useLocation } from "react-router-dom";
+
 import Board from "../../Home/Board/Board";
+import axios from "axios";
 
 import styles from "./ProfileInfo.module.css";
 
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
-export default function ProfileInfo({ username, dateCreated }) {
-  return (
-      <Board>
-        <img
-          className={styles.profileInfo__profilePicture}
-          src={global.testImgUrl}
-        />
+export default function ProfileInfo({ username }) {
+  const [user, setUser] = useState("");
 
-        <div className={styles.profileInfo__username}>{username}</div>
+  const date = new Date(user.createdAt);
+  const str = date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear();
+  const location = useLocation();
+
+  const getPosts = async () => {
+    const res = await axios
+      .get(`${global.apiUrl}/auth/front/` + username)
+      .then((res) => {
+        setUser(res.data);
+      });
+  };
+
+  useEffect(() => {
+    getPosts();
+  }, [location]);
+
+  console.log(user);
+  return (
+    <Board>
+      <img
+        className={styles.profileInfo__profilePicture}
+        src={user.profilePic ? user.profilePic : global.testImgUrl}
+      />
+
+      <div className={styles.profileInfo__username}>{user.username}</div>
+      <div className={styles.profileInfo__date}>
         <div className={styles.profileInfo__date}>
-          <div className={styles.profileInfo__date}>
-            <CalendarMonthIcon />
-            <div>Date created:</div>
-          </div>
-          <div>{dateCreated}</div>
+          <CalendarMonthIcon />
+          <div>Date created:</div>
         </div>
-      </Board>
+        <div>{str}</div>
+      </div>
+    </Board>
   );
 }

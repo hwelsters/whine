@@ -4,18 +4,24 @@ import styles from "./ExploreIcons.module.css";
 
 export default function ExploreIcons({ blockType, emoji, emojiIndex }) {
   const rootStyles = [
-    styles.emotionIcons__rootLeft,
-    styles.emotionIcons__rootCenter,
-    styles.emotionIcons__rootRight,
+    styles.emotionIcons__colorFirst,
+    styles.emotionIcons__colorSecond,
+    styles.emotionIcons__colorThird,
+    styles.emotionIcons__colorFourth,
+    styles.emotionIcons__colorFifth,
+    styles.emotionIcons__colorSixth,
+    styles.emotionIcons__colorSeventh,
+    styles.emotionIcons__colorEight,
+    styles.emotionIcons__colorNinth,
   ];
 
   return (
-    <div className={`${styles.emotionIcons__root} ${rootStyles[blockType]}`}>
+    <div className={styles.emotionIcons__root}>
       <Link
-        className={styles.emotionIcons__block}
+        className={`${styles.emotionIcons__block} ${rootStyles[emojiIndex]}`}
         to={`/emotion?e=${emojiIndex}`}
       >
-        <div>{emoji}</div>
+        <div >{emoji}</div>
       </Link>
     </div>
   );

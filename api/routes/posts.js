@@ -44,7 +44,8 @@ router.post("/create", verify, async (req, res) => {
 });
 
 // GET MOST RECENT POSTS
-router.get("/", async (req, res) => {
+router.get("/recent", async (req, res) => {
+  console.log("GET RECENT");
   try {
     const posts = await Post.find().sort({ createdAt: -1 }).limit(10);
     res.status(200).json(posts);
@@ -54,9 +55,10 @@ router.get("/", async (req, res) => {
 });
 
 // GET USER POSTS
-router.get("/:id", async (req, res) => {
+router.get("/userPosts/:username", async (req, res) => {
+  console.log("GET USER");
   try {
-    const posts = await Post.find({ user_id: req.params.id })
+    const posts = await Post.find({ username: req.params.username })
       .sort({
         createdAt: -1,
       })

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { AuthContextProvider } from "./contexts/Auth/AuthContext";
 import Emotions from "./pages/Emotions/Emotions";
+import Friend from "./pages/Friend/Friend";
 
 import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
@@ -24,6 +25,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/emotion" element={<Emotions />} />
+          <Route path="/friend" element={<Friend />} />
         </Routes>
       </BrowserRouter>
     </AuthContextProvider>
