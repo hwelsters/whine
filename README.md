@@ -20,7 +20,7 @@ Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website wh
 
 - Text-based sentiment analysis to classify posts into certain emotions  
 - Front-end made with React
-- Back-end made with Node.js, Express.js and MongoDB
+- Back-end made with [Node.js](https://en.wikipedia.org/wiki/Node.js), [Express.js](https://en.wikipedia.org/wiki/Express.js)  and [MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 
 <h2>✨ Preview  </h2>
 What it looks like on desktops 🖥️:
@@ -39,6 +39,7 @@ What it looks like on mobile devices 📱:
 • [Express  ](https://en.wikipedia.org/wiki/Express.js)  
 • [React.js  ](https://en.wikipedia.org/wiki/React_(JavaScript_library))  
 • [Node.js  ](https://en.wikipedia.org/wiki/Node.js)  
+
 
 <h2>🤔 FAQ  </h2>
 
