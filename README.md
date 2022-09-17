@@ -14,7 +14,7 @@
 <p>A small website in the big world 🌎</p>
 <br/>
 
-Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website where people can whine about things in six words or less! 
+Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website where people can whine about things in six words or less! Whine about anything and explore different emotion spaces classified with sentiment analysis.
 
 <h2>🍟 Features</h2>
 
