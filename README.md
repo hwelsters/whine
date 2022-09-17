@@ -4,10 +4,13 @@
 
 <h2>📖 Contents</h2>
 
-• [🤘 Introduction](https://github.com/hwelsters/edamame#-introduction)  
+• [🤘  Introduction](https://github.com/hwelsters/edamame#-introduction)  
 • [🍟 Features  ](https://github.com/hwelsters/edamame#features)  
 • [✨ Preview  ](https://github.com/hwelsters/edamame#here-is-edamame-in-all-its-glory)  
-• [🎮 Playing the game  ](https://github.com/hwelsters/edamame#-playing-the-game)  
+• [🥞 Tech Stack  ](https://github.com/hwelsters/edamame#-playing-the-game)  
 • [🤔 FAQ  ](https://github.com/hwelsters/edamame#-faq)  
 
-<h2> Tech Stack </h2>
+<h2> Introduction </h2>
+<p> A social media website for whining about things in six words or less </p>
+<br/>
+<p> Uses sentiment analysis to classify posts based on emotion </p>
