@@ -14,7 +14,10 @@
 <p>A small website in the big world 🌎</p>
 <br/>
 
-Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website where people can whine about things in six words or less! Whine exactly the way that you should whine (in six words or less) on this spanking new social media website. Explore emotion spaces which contain posts classified with [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis).
+Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website where people can whine about things in six words or less! Whine exactly the way that you should whine (in six words or less) on this spanking new social media website. Explore emotion spaces which contain posts classified with [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis). 
+
+Each post will be classified into one of the following emotions:  
+💀😡😠😤😐🙂😀🤗🍆
 
 <h2>🍟 Features</h2>
 
@@ -26,6 +29,7 @@ Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website wh
 What it looks like on desktops 🖥️:
 
 ![image](https://user-images.githubusercontent.com/84760072/190868710-40199bad-bd57-4dbd-81ab-25ec1d7174cc.png)
+![image](https://user-images.githubusercontent.com/84760072/190869606-155a6164-051f-4e47-88c1-ccfa0cc68df6.png)
 
 What it looks like on mobile devices 📱:
 <p align="center">
