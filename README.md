@@ -22,6 +22,9 @@ Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website wh
 
 <h2>✨ Preview  </h2>
 
+![image](https://user-images.githubusercontent.com/84760072/190868710-40199bad-bd57-4dbd-81ab-25ec1d7174cc.png)
+
+
 <h2>🥞 Tech Stack</h2>
 - [MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 - [Express](https://en.wikipedia.org/wiki/Express.js)
