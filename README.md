@@ -10,7 +10,7 @@
 • [🥞 Tech Stack  ](https://github.com/hwelsters/edamame#-playing-the-game)  
 • [🤔 FAQ  ](https://github.com/hwelsters/edamame#-faq)  
 
-<h2> Introduction </h2>
-<p> A social media website for whining about things in six words or less </p>
+<h2>🤘Introduction</h2>
+<p>A social media website for whining about things in six words or less </p>
 <br/>
-<p> Uses sentiment analysis to classify posts based on emotion </p>
+<p>Uses sentiment analysis to classify posts based on emotion </p>
