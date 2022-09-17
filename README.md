@@ -19,4 +19,11 @@ Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website wh
 <h2>🍟 Features</h2>
 
 - Sentiment analysis to classify posts into certain emotions  
-- 
+
+<h2>✨ Preview  </h2>
+
+<h2>🥞 Tech Stack</h2>
+- [MongoDB](https://en.wikipedia.org/wiki/MongoDB)
+- [Express](https://en.wikipedia.org/wiki/Express.js)
+- [React.js](https://en.wikipedia.org/wiki/React_(JavaScript_library))
+- [Node.js](https://en.wikipedia.org/wiki/Node.js)
