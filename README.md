@@ -13,4 +13,5 @@
 <h2>🤘Introduction</h2>
 <p>A small website in the big world </p>
 <br/>
-<p>Uses sentiment analysis to classify posts based on emotion </p>
+
+Whine is a [social media](https://en.wikipedia.org/wiki/Social_media) website where people can whine about things in six words or less! Uses [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis) to classify posts into certain categories of emotion.
