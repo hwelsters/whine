@@ -7,7 +7,7 @@
 • [🤘  Introduction](https://github.com/hwelsters/whine/blob/main/README.md#--introduction)  
 • [🍟 Features  ](https://github.com/hwelsters/whine#-features)  
 • [✨ Preview  ](https://github.com/hwelsters/whine#-preview--)  
-• [🥞 Tech Stack  ]([https://github.com/hwelsters/edamame#-playing-the-game](https://github.com/hwelsters/whine#-tech-stack))  
+• [🥞 Tech Stack  ]((https://github.com/hwelsters/whine#-tech-stack))  
 • [🤔 FAQ  ](https://github.com/hwelsters/whine#-faq--)  
 
 <h2>🤘  Introduction</h2>
