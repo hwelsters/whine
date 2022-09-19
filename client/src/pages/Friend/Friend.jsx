@@ -1,8 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import axios from "axios";
-
 import styles from "./Friend.module.css";
 
 import Posts from "../../components/Home/Posts/Posts";
@@ -14,6 +12,7 @@ import UserInput from "../../components/Home/UserInput/UserInput";
 
 import { AuthContext } from "../../contexts/Auth/AuthContext";
 import { useSearchParams } from "react-router-dom";
+import { axiosInstance } from "../../../config";
 
 export default function Friend() {
   const [posts, setPosts] = useState([]);
@@ -23,8 +22,8 @@ export default function Friend() {
   const location = useLocation();
 
   const getPosts = async () => {
-    const res = await axios
-      .get(`${global.apiUrl}/posts/userPosts/` + username)
+    const res = await axiosInstance
+      .get(`posts/userPosts/` + username)
       .then((res) => {
         setPosts(res.data);
       });

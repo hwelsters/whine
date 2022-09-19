@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import axios from "axios";
 
 import styles from "./Emotions.module.css";
 
@@ -9,6 +8,7 @@ import Posts from "../../components/Home/Posts/Posts";
 import Navbar from "../../components/Navbar/Navbar/Navbar";
 import LeftSection from "../../components/Home/LeftSection/LeftSection";
 import RightSection from "../../components/Home/RightSection/RightSection";
+import { axiosInstance } from "../../../config";
 
 export default function Emotions() {
   const [posts, setPosts] = useState([]);
@@ -20,8 +20,8 @@ export default function Emotions() {
     const urlParams = new URLSearchParams(queryString);
 
     console.log(urlParams.get("e"));
-    const res = await axios
-      .get(`${global.apiUrl}/posts/emotions/` + urlParams.get("e").toString())
+    const res = await axiosInstance
+      .get(`posts/emotions/` + urlParams.get("e").toString())
       .then((res) => {
         setPosts(res.data);
       });

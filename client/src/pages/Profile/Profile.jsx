@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from "react";
-import axios from "axios";
 
 import styles from "./Profile.module.css";
 
@@ -11,14 +10,15 @@ import RightSection from "../../components/Home/RightSection/RightSection";
 import UserInput from "../../components/Home/UserInput/UserInput";
 
 import { AuthContext } from "../../contexts/Auth/AuthContext";
+import { axiosInstance } from "../../../config";
 
 export default function Profile() {
   const { user } = useContext(AuthContext);
   const [posts, setPosts] = useState([]);
 
   const getPosts = async () => {
-    const res = await axios
-      .get(`${global.apiUrl}/posts/userPosts/` + user.username)
+    const res = await axiosInstance
+      .get(`posts/userPosts/` + user.username)
       .then((res) => {
         setPosts(res.data);
       });

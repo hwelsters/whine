@@ -2,11 +2,11 @@ import React, { useState, useEffect, useContext } from "react";
 import { useLocation } from "react-router-dom";
 
 import Board from "../../Home/Board/Board";
-import axios from "axios";
 
 import styles from "./ProfileInfo.module.css";
 
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import { axiosInstance } from "../../../../config";
 
 export default function ProfileInfo({ username }) {
   const [user, setUser] = useState("");
@@ -16,8 +16,8 @@ export default function ProfileInfo({ username }) {
   const location = useLocation();
 
   const getPosts = async () => {
-    const res = await axios
-      .get(`${global.apiUrl}/auth/front/` + username)
+    const res = await axiosInstance
+      .get(`auth/front/` + username)
       .then((res) => {
         setUser(res.data);
       });

@@ -13,6 +13,7 @@ import upload from "../../../firebase";
 import Board from "../Board/Board";
 import { AuthContext } from "../../../contexts/Auth/AuthContext";
 import exploreIcons from "../Explore/ExploreEmojis";
+import { axiosInstance } from "../../../../config";
 
 export default function UserInput() {
   const { user } = useContext(AuthContext);
@@ -61,7 +62,7 @@ export default function UserInput() {
     };
 
     console.log(data);
-    const res = await axios.post(`${global.apiUrl}/posts/create`, data, config);
+    const res = await axiosInstance.post(`posts/create`, data, config);
 
     setText("");
     setImage("");

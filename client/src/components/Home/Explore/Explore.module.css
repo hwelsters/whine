@@ -1,5 +1,7 @@
 .explore__title {
     font-size: medium;
+
+    color: var(--font-color);
 }
 
 .explore__grid {

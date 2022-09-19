@@ -1,20 +1,19 @@
 import React, { useContext, useState, useEffect } from "react";
 import styles from "./Home.module.css";
 
-import axios from "axios";
-
 import Navbar from "../../components/Navbar/Navbar/Navbar";
 import Posts from "../../components/Home/Posts/Posts";
 import LeftSection from "../../components/Home/LeftSection/LeftSection";
 import RightSection from "../../components/Home/RightSection/RightSection";
 import { AuthContext } from "../../contexts/Auth/AuthContext";
+import { axiosInstance } from "../../../config";
 
 export default function Home() {
   const { user } = useContext(AuthContext);
   const [posts, setPosts] = useState([]);
 
   const getPosts = async () => {
-    await axios.get(`${global.apiUrl}/posts/recent`).then((res) => {
+    await axiosInstance.get(`posts/recent`).then((res) => {
       setPosts(res.data);
     });
   };

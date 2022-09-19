@@ -24,7 +24,8 @@
 }
 
 .emotionIcons__block:hover {
-  filter: brightness(1.025);
+  filter: brightness(1.01);
+  filter: contrast(102.5%);
   transform: scale(1.05, 1.05);
 }
 
@@ -32,46 +33,45 @@
   filter: brightness(1.005);
   transform: scale(0.95, 0.95);
 }
-
+/* 
 .emotionIcons__colorFirst {
-  background-color: #F6D0E8;
+  background-color: #c47490;
 }
 
 .emotionIcons__colorSecond {
-  background-color: #F6D0E8;
+  background-color: #c47490;
 }
 
 .emotionIcons__colorThird {
-  
-  background-color: #F9DFE1;
+  background-color: #c47490;
 }
 
 .emotionIcons__colorFourth {
   
-  background-color: #F9DFE1;
+  background-color: #8f6edf;
 }
 
 .emotionIcons__colorFifth {
   
-  background-color: #EFEED8;
+  background-color: #8f6edf;
 }
 
 .emotionIcons__colorSixth {
   
-  background-color: #D4EBD4;
+  background-color: #8f6edf;
 }
 
 .emotionIcons__colorSeventh {
   
-  background-color: #D4EBD4;
+  background-color: #00d181;
 }
 
 .emotionIcons__colorEight {
   
-  background-color: #D8DDEC;
+  background-color: #00d181;
 }
 
 .emotionIcons__colorNinth {
   
-  background-color: #D8DDEC;
-}
+  background-color: #00d181;
+} */

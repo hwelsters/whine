@@ -23,6 +23,7 @@
   flex-direction: column;
 
   background-color: var(--fg-color);
+  color: var(--font-color);
 
   justify-content: center;
   align-items: center;
@@ -52,6 +53,7 @@
 
 .signUp__input {
   background-color: var(--bg-color);
+  color: var(--font-color);
   border: none;
   border-radius: var(--component-border-radius);
   outline: none;

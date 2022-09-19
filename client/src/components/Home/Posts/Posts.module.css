@@ -4,4 +4,6 @@
 
     /* test */
     max-width: 30rem;
+
+    color: var(--font-color);
 }

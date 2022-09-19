@@ -1,12 +1,4 @@
 body {
-  /* Colors */
-  --bg-color: #f3f5f7;
-  --fg-color: #ffffff;
-  --font-color: #0e1221;
-
-  --bg-tint-color: #f1eafb;
-  --fg-tint-color: #8350f5;
-
   /* Page */
   --side-margins: 15%;
   --side-widths: 20rem;
@@ -27,16 +19,40 @@ body {
   background-color: var(--bg-color);
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    /* Colors */
+    --bg-color: #f4f4f8;
+    --fg-color: #fffeff;
+    --font-color: #010002;
+
+    --bg-tint-color: #f1e8fd;
+    --fg-tint-color: #7f3dfa;
+  }
+}
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  body {
+    /* Colors */
+    --bg-color: #120d18;
+    --fg-color: #21162b;
+    --font-color: #eae6ed;
+
+    --bg-tint-color: #e32575;
+    --fg-tint-color: #eae6ed;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   body {
     --side-margins: 5%;
   }
 }
+
 * {
   font-family: "Josefin Sans", sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: var(--font-color);
 }

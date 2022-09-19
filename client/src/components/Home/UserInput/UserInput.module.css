@@ -67,6 +67,7 @@
   padding: 0.5rem;
   padding-left: 1rem;
   margin-left: var(--component-padding);
+  color: var(--font-color);
 
   flex: 1;
 
@@ -88,6 +89,7 @@
 .userInput__info {
   display: flex;
   flex-direction: row;
+  color: var(--font-color);
 
   align-items: center;
   justify-content: flex-end;

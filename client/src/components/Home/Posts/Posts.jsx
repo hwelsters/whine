@@ -12,7 +12,7 @@ export default function Posts({ children, posts }) {
         <Post key={index} post={post} />
       ))}
 
-      {posts.length === 0 && (<Board> 🙃Nothing to see here, I guess... </Board>)}
+      {posts.length === 0 && (<Board> 🙃 Nothing to see here, I guess... </Board>)}
     </div>
   );
 }

@@ -32,6 +32,12 @@ app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postsRoute);
 
+app.use(express.static(path.join(__dirname, "../client/build")));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
+
 app.listen(port, () => {
   console.log(`BACKEND IS LIVE ON PORT ${port}`);
 });

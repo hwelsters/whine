@@ -1,5 +1,4 @@
 import { useState } from "react";
-import axios from "axios";
 
 import styles from "./SignUp.module.css";
 import { checkPasswordStrength } from "./passwordCheck";
@@ -8,6 +7,7 @@ import Logo from "../../components/Logo/Logo";
 import Navbar from "../../components/Navbar/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import PasswordStrength from "../../components/Authentication/PasswordStrengthModal/PasswordStrength";
+import { axiosInstance } from "../../../config";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
@@ -34,8 +34,8 @@ export default function SignUp() {
     else if (password !== confirmPassword) setError("Passwords don't match");
     else {
       try {
-        const res = await axios.post(
-          "http://localhost:5000/api/auth/register",
+        const res = await axiosInstance.post(
+          "auth/register",
           {
             username: username,
             email: email,
