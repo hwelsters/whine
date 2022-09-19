@@ -27,7 +27,7 @@ Each post will be classified into one of the following emotions:
 <h2>🍟 Features</h2>
 
 - Text-based [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis) to classify posts into certain emotions  
-- Front-end made with [React](https://en.wikipedia.org/wiki/React_(JavaScript_library))  
+- Front-end made with [React](https://en.wikipedia.org/wiki/React_(JavaScript_library)) and Javascript  
 - Back-end made with [Node.js](https://en.wikipedia.org/wiki/Node.js), [Express.js](https://en.wikipedia.org/wiki/Express.js)  and [MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 
 <br/>
