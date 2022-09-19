@@ -60,5 +60,6 @@ What it looks like on desktops 🖥️:
 
 <br/>
 <h2>🤔 FAQ  </h2>
-#### Where is the web-app?
+
+#### Where is the web-app?  
 You can interact with it right here: https://whining.herokuapp.com/friend?u=hwelsters.
