@@ -16,8 +16,6 @@ global.testImgUrl = "https://i.ibb.co/37YHLK3/profile-pic.png";
 global.apiUrl = "http://localhost:5000/api";
 
 function App() {
-  const { user } = useContext(AuthContext);
-  console.log(user);
   return (
     <AuthContextProvider>
       <BrowserRouter>

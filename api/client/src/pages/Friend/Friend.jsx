@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-import styles from "./Profile.module.css";
+import styles from "./Friend.module.css";
 
 import Posts from "../../components/Home/Posts/Posts";
 import Navbar from "../../components/Navbar/Navbar/Navbar";
@@ -10,15 +11,19 @@ import RightSection from "../../components/Home/RightSection/RightSection";
 import UserInput from "../../components/Home/UserInput/UserInput";
 
 import { AuthContext } from "../../contexts/Auth/AuthContext";
+import { useSearchParams } from "react-router-dom";
 import { axiosInstance } from "../../config";
 
-export default function Profile() {
-  const { user } = useContext(AuthContext);
+export default function Friend() {
   const [posts, setPosts] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const username = searchParams.get("u");
+
+  const location = useLocation();
 
   const getPosts = async () => {
     const res = await axiosInstance
-      .get(`posts/userPosts/` + user.username)
+      .get(`posts/userPosts/` + username)
       .then((res) => {
         setPosts(res.data);
       });
@@ -26,16 +31,15 @@ export default function Profile() {
 
   useEffect(() => {
     getPosts();
-  }, []);
+  }, [location]);
 
   return (
     <div>
       <Navbar />
-      <div className={styles.profile__block}>
+      <div className={styles.friend__block}>
         <LeftSection />
         <Posts posts={posts}>
-          <ProfileInfo username={user.username}/>
-          <UserInput />
+          <ProfileInfo username={username}/>
         </Posts>
         <RightSection />
       </div>

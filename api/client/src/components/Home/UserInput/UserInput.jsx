@@ -13,7 +13,7 @@ import upload from "../../../firebase";
 import Board from "../Board/Board";
 import { AuthContext } from "../../../contexts/Auth/AuthContext";
 import exploreIcons from "../Explore/ExploreEmojis";
-import { axiosInstance } from "../../../../config";
+import { axiosInstance } from "../../../config";
 
 export default function UserInput() {
   const { user } = useContext(AuthContext);
