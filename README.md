@@ -40,8 +40,8 @@ What it looks like on desktops 🖥️:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84760072/190868943-070ba529-81e0-479d-81bd-a2991d2d0f09.png"/>
 </p>
-
 <br/>
+
 ### 🌙 Dark Mode  <br/>
 
 ![image](https://user-images.githubusercontent.com/84760072/190869606-155a6164-051f-4e47-88c1-ccfa0cc68df6.png)
