@@ -34,13 +34,15 @@ Each post will be classified into one of the following emotions:
 <h2>✨ Preview  </h2>
 What it looks like on desktops 🖥️:
 
-### ☀️ Light Mode  <br/>
+<details>
+  <summary> ### ☀️ Light Mode  <br/> </summary>
 
 ![image](https://user-images.githubusercontent.com/84760072/190978131-e21d403a-4015-4a39-9d61-22da60dc75e0.png)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84760072/190978200-3b25149b-c35c-4d5b-9c25-7215a6388fbb.png"/>
 </p>
 <br/>
+</details>
 
 ### 🌙 Dark Mode  <br/>
 
