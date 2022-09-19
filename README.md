@@ -32,13 +32,16 @@ Each post will be classified into one of the following emotions:
 
 <br/>
 <h2>✨ Preview  </h2>
-What it looks like on desktops 🖥️:
 
 <!-- LIGHT MODE COLLAPSIBLE -->
 <details>
   <summary> <h3>☀️ Light Mode </h3> </summary>
 
+What it looks like on desktops 🖥️:
 ![image](https://user-images.githubusercontent.com/84760072/190978131-e21d403a-4015-4a39-9d61-22da60dc75e0.png)
+  
+What it looks like on mobile 📱:
+  
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84760072/190978200-3b25149b-c35c-4d5b-9c25-7215a6388fbb.png"/>
 </p>
@@ -52,7 +55,11 @@ What it looks like on desktops 🖥️:
   
   <summary> <h3> 🌙 Dark Mode  </h3> </summary>
   
+What it looks like on desktops 🖥️:
 ![image](https://user-images.githubusercontent.com/84760072/190978327-5605039c-dcbc-4e6b-902c-4bf67a05b1de.png)
+  
+What it looks like on mobile 📱:
+  
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84760072/190978376-e7528761-3c8d-4ebf-b766-b4d6f7b68cba.png"/>
 </p>
