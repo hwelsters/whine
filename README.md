@@ -36,17 +36,17 @@ What it looks like on desktops 🖥️:
 
 ### ☀️ Light Mode  <br/>
 
-![image](https://user-images.githubusercontent.com/84760072/190868710-40199bad-bd57-4dbd-81ab-25ec1d7174cc.png)
+![image](https://user-images.githubusercontent.com/84760072/190978131-e21d403a-4015-4a39-9d61-22da60dc75e0.png)
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/84760072/190868943-070ba529-81e0-479d-81bd-a2991d2d0f09.png"/>
+  <img src="https://user-images.githubusercontent.com/84760072/190978200-3b25149b-c35c-4d5b-9c25-7215a6388fbb.png"/>
 </p>
 <br/>
 
 ### 🌙 Dark Mode  <br/>
 
-![image](https://user-images.githubusercontent.com/84760072/190869606-155a6164-051f-4e47-88c1-ccfa0cc68df6.png)
+![image](https://user-images.githubusercontent.com/84760072/190978327-5605039c-dcbc-4e6b-902c-4bf67a05b1de.png)
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/84760072/190869666-81fccac9-78e4-40ae-b834-98c373f12839.png"/>
+  <img src="https://user-images.githubusercontent.com/84760072/190978376-e7528761-3c8d-4ebf-b766-b4d6f7b68cba.png"/>
 </p>
 
 <br/>
