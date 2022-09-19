@@ -51,6 +51,7 @@ What it looks like on desktops 🖥️:
 <details>
   
   <summary> <h3> 🌙 Dark Mode  </h3> </summary>
+  
 ![image](https://user-images.githubusercontent.com/84760072/190978327-5605039c-dcbc-4e6b-902c-4bf67a05b1de.png)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84760072/190978376-e7528761-3c8d-4ebf-b766-b4d6f7b68cba.png"/>
