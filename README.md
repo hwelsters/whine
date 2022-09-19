@@ -38,9 +38,11 @@ Each post will be classified into one of the following emotions:
   <summary> <h3>☀️ Light Mode </h3> </summary>
 
 What it looks like on desktops 🖥️:  
-![image](https://user-images.githubusercontent.com/84760072/190978131-e21d403a-4015-4a39-9d61-22da60dc75e0.png)
+  
+  ![image](https://user-images.githubusercontent.com/84760072/190978131-e21d403a-4015-4a39-9d61-22da60dc75e0.png)
   
 What it looks like on mobile 📱:  
+    
   
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84760072/190978200-3b25149b-c35c-4d5b-9c25-7215a6388fbb.png"/>
