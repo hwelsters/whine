@@ -81,4 +81,4 @@ Each post will be classified into one of the following emotions:
 <h2>🤔 FAQ  </h2>
 
 ### Where is the web-app?  
-You can interact with it right here: https://whining.herokuapp.com/friend?u=hwelsters.
+You can interact with it right here: https://whining.herokuapp.com
