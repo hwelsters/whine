@@ -10,7 +10,7 @@ import RightSection from "../../components/Home/RightSection/RightSection";
 import UserInput from "../../components/Home/UserInput/UserInput";
 
 import { AuthContext } from "../../contexts/Auth/AuthContext";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../config";
 
 export default function Profile() {
   const { user } = useContext(AuthContext);

@@ -7,7 +7,7 @@ import Logo from "../../components/Logo/Logo";
 import Navbar from "../../components/Navbar/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import PasswordStrength from "../../components/Authentication/PasswordStrengthModal/PasswordStrength";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../config";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
