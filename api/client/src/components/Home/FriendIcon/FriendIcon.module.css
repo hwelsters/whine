@@ -34,4 +34,5 @@
 .friendIcon__username {
     font-size: large;
     margin-left: 1rem;
+    color: var(--font-color);
 }

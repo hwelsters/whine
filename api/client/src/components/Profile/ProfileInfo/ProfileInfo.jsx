@@ -6,7 +6,7 @@ import Board from "../../Home/Board/Board";
 import styles from "./ProfileInfo.module.css";
 
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../../utils/config.js";
 
 export default function ProfileInfo({ username }) {
   const [user, setUser] = useState("");

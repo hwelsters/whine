@@ -20,7 +20,7 @@
 
 .post__profileName {
   font-weight: bold;
-
+  color: var(--font-color);
   cursor: pointer;
 }
 

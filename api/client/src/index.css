@@ -34,12 +34,18 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     /* Colors */
-    --bg-color: #120d18;
+    --bg-color: #f4f4f8;
+    --fg-color: #fffeff;
+    --font-color: #010002;
+
+    --bg-tint-color: #f1e8fd;
+    --fg-tint-color: #7f3dfa;
+    /* --bg-color: #120d18;
     --fg-color: #21162b;
     --font-color: #eae6ed;
 
     --bg-tint-color: #e32575;
-    --fg-tint-color: #eae6ed;
+    --fg-tint-color: #eae6ed; */
   }
 }
 

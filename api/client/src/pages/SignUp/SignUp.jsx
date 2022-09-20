@@ -7,7 +7,7 @@ import Logo from "../../components/Logo/Logo";
 import Navbar from "../../components/Navbar/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import PasswordStrength from "../../components/Authentication/PasswordStrengthModal/PasswordStrength";
-import { axiosInstance } from "../../config";
+import { axiosInstance } from "../../utils/config";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
@@ -44,7 +44,7 @@ export default function SignUp() {
         );
 
         setError("Profile created");
-        window.location.href = "/signin";
+        window.location = "/signin";
       } catch (err) {
         setError(err.response.data);
         console.log(err);

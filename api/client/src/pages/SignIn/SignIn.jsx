@@ -6,7 +6,7 @@ import styles from "./SignIn.module.css";
 import Logo from "../../components/Logo/Logo";
 import Navbar from "../../components/Navbar/Navbar/Navbar";
 
-import { loginCall } from "../../apiCalls";
+import { loginCall } from "../../utils/apiCalls";
 import { AuthContext } from "../../contexts/Auth/AuthContext";
 
 export default function SignIn() {
@@ -26,7 +26,7 @@ export default function SignIn() {
 
     if (res) {
       setWarning("Signed in successfully");
-      window.location.href = "/";
+      window.location = "/";
     }
   };
 

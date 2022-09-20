@@ -8,12 +8,12 @@ import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import SendIcon from "@mui/icons-material/Send";
 import CloseIcon from "@mui/icons-material/Close";
 
-import upload from "../../../firebase";
+import upload from "../../../utils/firebase";
 
 import Board from "../Board/Board";
 import { AuthContext } from "../../../contexts/Auth/AuthContext";
 import exploreIcons from "../Explore/ExploreEmojis";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../../utils/config";
 
 export default function UserInput() {
   const { user } = useContext(AuthContext);

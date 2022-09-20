@@ -4,7 +4,7 @@ import styles from "./Messages.module.css";
 
 import Board from "../Board/Board";
 import FriendIcon from "../FriendIcon/FriendIcon";
-import { axiosInstance } from "../../../config";
+import { axiosInstance } from "../../../utils/config";
 
 export default function Messages() {
   const [friends, setFriends] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);

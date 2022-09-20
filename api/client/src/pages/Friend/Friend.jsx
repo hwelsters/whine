@@ -12,7 +12,7 @@ import UserInput from "../../components/Home/UserInput/UserInput";
 
 import { AuthContext } from "../../contexts/Auth/AuthContext";
 import { useSearchParams } from "react-router-dom";
-import { axiosInstance } from "../../config";
+import { axiosInstance } from "../../utils/config";
 
 export default function Friend() {
   const [posts, setPosts] = useState([]);

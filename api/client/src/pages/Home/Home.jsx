@@ -6,7 +6,7 @@ import Posts from "../../components/Home/Posts/Posts";
 import LeftSection from "../../components/Home/LeftSection/LeftSection";
 import RightSection from "../../components/Home/RightSection/RightSection";
 import { AuthContext } from "../../contexts/Auth/AuthContext";
-import { axiosInstance } from "../../config";
+import { axiosInstance } from "../../utils/config";
 
 export default function Home() {
   const { user } = useContext(AuthContext);

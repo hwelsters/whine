@@ -7,7 +7,7 @@ import Posts from "../../components/Home/Posts/Posts";
 import Navbar from "../../components/Navbar/Navbar/Navbar";
 import LeftSection from "../../components/Home/LeftSection/LeftSection";
 import RightSection from "../../components/Home/RightSection/RightSection";
-import { axiosInstance } from "../../config";
+import { axiosInstance } from "../../utils/config";
 
 export default function Emotions() {
   const [posts, setPosts] = useState([]);

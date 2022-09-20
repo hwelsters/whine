@@ -9,7 +9,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import styles from "./NavbarModal.module.css";
 
 import { AuthContext } from "../../../contexts/Auth/AuthContext";
-import { logoutCall } from "../../../apiCalls";
+import { logoutCall } from "../../../utils/apiCalls";
 
 export default function NavbarModal() {
   const { dispatch } = useContext(AuthContext);
@@ -20,7 +20,7 @@ export default function NavbarModal() {
   };
 
   const toProfile = () => {
-    window.location.href="/profile";
+    window.location="/profile";
   }
   return (
     <div className={styles.navbarModal__root}>

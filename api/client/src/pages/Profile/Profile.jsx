@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 
 import styles from "./Profile.module.css";
 
+import Home from "../Home/Home";
 import Posts from "../../components/Home/Posts/Posts";
 import Navbar from "../../components/Navbar/Navbar/Navbar";
 import ProfileInfo from "../../components/Profile/ProfileInfo/ProfileInfo";
@@ -10,7 +11,7 @@ import RightSection from "../../components/Home/RightSection/RightSection";
 import UserInput from "../../components/Home/UserInput/UserInput";
 
 import { AuthContext } from "../../contexts/Auth/AuthContext";
-import { axiosInstance } from "../../config";
+import { axiosInstance } from "../../utils/config";
 
 export default function Profile() {
   const { user } = useContext(AuthContext);
