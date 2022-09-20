@@ -72,11 +72,11 @@ Each post will be classified into one of the following emotions:
 <br/>
 <h2>🥞 Tech Stack</h2>
 
+• [🔥 Firebase (Firestore)](https://en.wikipedia.org/wiki/Firebase)
 • [🌿 MongoDB](https://en.wikipedia.org/wiki/MongoDB)  
 • [⚡ Express  ](https://en.wikipedia.org/wiki/Express.js)  
 • [⚛️ React.js  ](https://en.wikipedia.org/wiki/React_(JavaScript_library))  
 • [🔗 Node.js  ](https://en.wikipedia.org/wiki/Node.js)  
-• [🔥 Firebase (Firestore)](https://en.wikipedia.org/wiki/Firebase)
 
 
 <br/>
