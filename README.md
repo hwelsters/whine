@@ -14,6 +14,7 @@
 
 <h2>🤘  Introduction</h2>
 <p>The internet's trash can 🗑️ of emotions</p>
+<p>Currently in BETA</p>
 <br/>
 
 Whine is a minimalistic [social media](https://en.wikipedia.org/wiki/Social_media) website where people can whine about things in six words or less! Whine exactly the way that you should whine (in six words or less) on this spanking new social media website. Explore emotion spaces which contain posts classified with AFFIN [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment_analysis). 
