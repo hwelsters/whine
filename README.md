@@ -76,6 +76,7 @@ Each post will be classified into one of the following emotions:
 • [⚡ Express  ](https://en.wikipedia.org/wiki/Express.js)  
 • [⚛️ React.js  ](https://en.wikipedia.org/wiki/React_(JavaScript_library))  
 • [🔗 Node.js  ](https://en.wikipedia.org/wiki/Node.js)  
+• [🔥 Firebase (Firestore)](https://en.wikipedia.org/wiki/Firebase)
 
 
 <br/>
